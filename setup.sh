@@ -79,6 +79,7 @@ echo -e $TEXT_RESET
 
 # cleanup files after configuration complete
 sudo rm -r ../server_config
+cd ~/
 sudo apt-get autoremove -y
 sudo apt-get clean
 
