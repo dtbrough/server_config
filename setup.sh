@@ -2,9 +2,20 @@
 
 # script for setting up a server using baseline configs and files
 
+
+OS_TYPE='Linux'
+
+
 TEXT_RESET='\e[0m'
 TEXT_YELLOW='\e[0;33m'
 TEXT_RED_B='\e[1;31m'
+
+
+# setup bash
+if [OS_TYPE = 'Linux']; then
+  sudo cp ./dotfiles/.bashrc ~/.bashrc
+  sudo source ~/.bashrc
+fi
 
 
 # update package lists and install latest disto upgrades
