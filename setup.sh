@@ -29,7 +29,7 @@ echo -e $TEXT_RESET
 # setup basic firewall
 sudo ufw default deny
 sudo ufw allow 'OpenSSH'
-sudo ufw enable
+sudo ufw enable -y
 
 echo -e $TEXT_YELLOW 
 echo 'Firewall configured...'
@@ -39,6 +39,7 @@ echo -e $TEXT_RESET
 # setup fail2ban
 sudo apt-get install fail2ban
 sudo cp ./fail2ban/jail.local /etc/fail2ban/jail.local
+sudo service fail2ban reload
 sudo service fail2ban restart
 
 echo -e $TEXT_YELLOW 
