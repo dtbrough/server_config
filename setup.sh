@@ -53,7 +53,7 @@ echo -e $TEXT_YELLOW
 echo 'NGINX installed and firewall configured...'
 echo -e $TEXT_RESET
 
-echo -e $TEXT_RED 
+echo -e $TEXT_RED_B
 echo 'NGINX further configuration required...'
 echo -e $TEXT_RESET
 
@@ -70,5 +70,7 @@ echo -e $TEXT_RESET
 
 # TODO: setup ghost-blog
 
-# remove git files after configuration complete
-sudo rm -r ./server_config
+# cleanup files after configuration complete
+sudo rm -r ../server_config
+sudo apt-get autoremove -y
+sudo apt-get clean
