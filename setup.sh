@@ -52,7 +52,7 @@ sudo apt-get install nginx -y
 
 sudo ufw allow 'Nginx HTTP'
 sudo ufw allow 'Nginx HTTPS'
-sudo ufw enable
+sudo ufw enable -y
 
 echo -e $TEXT_YELLOW 
 echo 'NGINX installed and firewall configured...'
