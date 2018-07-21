@@ -12,6 +12,10 @@ TEXT_RED_B='\e[1;31m'
 sudo cp ./dotfiles/.bashrc ~/.bashrc
 source ~/.bashrc
 
+echo -e $TEXT_YELLOW 
+echo 'Bash and dotfiles copied...'
+echo -e $TEXT_RESET
+
 
 # update package lists and install latest disto upgrades
 sudo apt-get update
