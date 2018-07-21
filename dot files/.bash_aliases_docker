@@ -2,10 +2,6 @@
 
 # functions / aliases for bash commands
 
-################################################################
-#### Docker Helper Functions ###################################
-################################################################
-
 docker_vm() {
         screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
 }
