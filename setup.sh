@@ -37,7 +37,7 @@ echo -e $TEXT_RESET
 
 
 # setup fail2ban
-sudo apt-get install fail2ban
+sudo apt-get install fail2ban -y
 sudo cp ./fail2ban/jail.local /etc/fail2ban/jail.local
 sudo service fail2ban reload
 sudo service fail2ban restart
