@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# lists banned unique ip's
+
+grep "Ban " /var/log/fail2ban.log | awk -F[\ \:] '{print $10,$8}' | sort | uniq -c | sort -n
