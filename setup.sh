@@ -25,7 +25,7 @@ echo -e $TEXT_RESET
 # setup basic firewall
 sudo ufw default deny
 sudo ufw allow 'OpenSSH'
-sudo ufw enable -y
+sudo ufw enable
 
 echo -e $TEXT_YELLOW 
 echo 'Firewall configured...'
