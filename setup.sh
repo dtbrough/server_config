@@ -63,7 +63,7 @@ echo 'NGINX further configuration required...'
 echo -e $TEXT_RESET
 
 
-# TODO: setup docker
+# setup docker
 sudo apt-get install software-properties-common python-software-properties
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
@@ -75,4 +75,5 @@ echo -e $TEXT_RESET
 
 # TODO: setup ghost-blog
 
-# TODO: 
+# remove git files after configuration complete
+rm -r ./server_config
