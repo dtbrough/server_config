@@ -52,13 +52,6 @@ echo -e
 
 sudo fail2ban-client status recidive
 
-
-echo -e $TEXT_YELLOW
-echo 'ssl certificate status'
-echo -e $TEXT_RESET
-
-echo openssl s_client -connect blog.david-brough.com:443 -servername blog.david-brough.com 2>/dev/null | openssl x509 -noout -dates
-
 echo -e $TEXT_YELLOW
 echo 'End of security report'
 echo -e $TEXT_RESET
