@@ -15,7 +15,7 @@ source ~/.bashrc
 
 # update package lists and install latest disto upgrades
 sudo apt-get update
-sudo apt-get dist-upgrade
+sudo apt-get dist-upgrade -y
 
 echo -e $TEXT_YELLOW 
 echo 'APT update and distribution upgrade finished...'
