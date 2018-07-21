@@ -10,7 +10,7 @@ TEXT_RED_B='\e[1;31m'
 
 # setup bash
 sudo cp ./dotfiles/.bashrc ~/.bashrc
-sudo source ~/.bashrc
+source ~/.bashrc
 
 
 # update package lists and install latest disto upgrades
