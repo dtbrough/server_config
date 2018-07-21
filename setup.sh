@@ -76,4 +76,4 @@ echo -e $TEXT_RESET
 # TODO: setup ghost-blog
 
 # remove git files after configuration complete
-rm -r ./server_config
+sudo rm -r ./server_config
