@@ -79,3 +79,12 @@ echo -e $TEXT_RESET
 sudo rm -r ../server_config
 sudo apt-get autoremove -y
 sudo apt-get clean
+
+# confirm script complete
+echo -e $TEXT_YELLOW 
+echo 'Script complete'
+echo -e $TEXT_RESET
+
+echo -e $TEXT_RED_B
+echo 'Some packages require further configuration'
+echo -e $TEXT_RESET
