@@ -9,6 +9,8 @@ TEXT_RED_B='\e[1;31m'
 
 
 # setup bash
+sudo cp ./dotfiles/.bash_aliases_docker ~/.bash_aliases_docker
+sudo cp ./dotfiles/.bash_prompt ~/.bash_prompt
 sudo cp ./dotfiles/.bashrc ~/.bashrc
 source ~/.bashrc
 
