@@ -46,6 +46,7 @@ sudo service fail2ban restart
 
 echo -e $TEXT_YELLOW 
 echo 'Fail2ban configured...'
+echo 'If errors occur on reload, check jail.local and disable any unused jails.'
 echo -e $TEXT_RESET
 
 
